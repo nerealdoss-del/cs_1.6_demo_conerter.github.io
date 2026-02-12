@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DEM to MP4 Converter | Dos Remix Studio</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background: #0d0d0d;
+            color: white;
+            font-family: Arial;
+            text-align: center;
+            padding: 50px;
+        }
+        .box {
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 10px;
+            width: 400px;
+            margin: auto;
+        }
+        button {
+            background: purple;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+
+<h1>CS 1.6 DEM → MP4 Converter</h1>
+
+<div class="box">
+    <input type="file" accept=".dem">
+    <br>
+    <button onclick="convert()">Convert</button>
+    <p id="result"></p>
+</div>
+
+<script>
+function convert(){
+    document.getElementById("result").innerHTML =
+    "⚠ .dem faylni to'g'ridan-to'g'ri mp4 ga aylantirib bo'lmaydi.<br><br>" +
+    "1) DEM faylni cstrike papkasiga joylashtiring.<br>" +
+    "2) CS 1.6 ni oching.<br>" +
+    "3) Console oching (~) va yozing: <br><b>playdemo nomi</b><br>" +
+    "4) OBS yoki Bandicam orqali yozib oling.<br><br>" +
+    "🎥 Tavsiya: 60 FPS, H264, 1080p";
+}
+</script>
+
+</body>
+</html>
